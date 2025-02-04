@@ -13,4 +13,4 @@ EXPOSE 80 3306
 
 COPY start.sh /start.sh
 
-CMD ["/start.sh"]
+CMD ["/docker-entrypoint.sh"]
