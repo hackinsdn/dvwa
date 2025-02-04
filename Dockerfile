@@ -1,7 +1,8 @@
 FROM ghcr.io/digininja/dvwa:latest
 
 RUN apt update \
- && apt install -y --no-install-recommends mariadb-server socat \
+ && apt install -y --no-install-recommends \
+                mariadb-server socat net-tools iproute2 \
  && rm -rf /var/lib/apt/lists/*
 
 RUN service mariadb start \
