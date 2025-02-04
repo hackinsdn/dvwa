@@ -11,6 +11,6 @@ RUN service mariadb start \
 
 EXPOSE 80 3306
 
-COPY start.sh /start.sh
+COPY docker-entrypoint.sh /docker-entrypoint.sh
 
-CMD ["/start.sh"]
+CMD ["/docker-entrypoint.sh"]
